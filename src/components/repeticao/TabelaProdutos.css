@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+}
+table thead {
+    background-color: gray;
+}
+.par {
+    background-color: #ddd;
+}
