@@ -3,17 +3,27 @@ import Fragmento from "../basics/Fragmento";
 import ComParametro from "../basics/ComParametro";
 import Aleatorio from "../basics/Aleatorio";
 import Card from "../layout/Card";
-import "./App.css";
 import Familia from "../basics/Familia";
 import FamiliaMembro from "../basics/FamiliaMembro";
 import ListaAlunos from "../repeticao/ListaAlunos";
 import TabelaProdutos from "../repeticao/TabelaProdutos";
+import ParOuImpar from "../condicional/ParOuImpar";
+import '../app/App.css'
+import UsuarioInfo from "../condicional/UsuarioInfo";
 
 export default function App() {
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+      <Card
+          titulo="#08 - Renderização Condicional"
+          color={"#" + Math.floor(Math.random() * 16777215).toString(16)}
+          >
+          <ParOuImpar numero={20}></ParOuImpar>
+          <UsuarioInfo usuario={{nome: 'Fernando'}}></UsuarioInfo>
+          <UsuarioInfo usuario={{email: 'Fernando'}}></UsuarioInfo>
+        </Card>
       <Card
           titulo="#07 - Desafio Produtos"
           color={"#" + Math.floor(Math.random() * 16777215).toString(16)}

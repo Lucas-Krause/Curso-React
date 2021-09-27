@@ -4,7 +4,7 @@ import "./TabelaProdutos.css";
 export default function TabelaProdutos(props) {
   const tr = produtos.map((produto, i) => {
     return (
-      <tr key={produto.id} className={i % 2 == 0 ? 'par' : 'impar'}>
+      <tr key={produto.id} className={i % 2 === 0 ? 'par' : 'impar'}>
         <td>{produto.id}</td>
         <td>{produto.nome}</td>
         <td>R$: {produto.preco}</td>
