@@ -1,3 +1,4 @@
+import '../app/App.css';
 import First from '../basics/First';
 import Fragmento from '../basics/Fragmento';
 import ComParametro from '../basics/ComParametro';
@@ -8,14 +9,32 @@ import FamiliaMembro from '../basics/FamiliaMembro';
 import ListaAlunos from '../repeticao/ListaAlunos';
 import TabelaProdutos from '../repeticao/TabelaProdutos';
 import ParOuImpar from '../condicional/ParOuImpar';
-import '../app/App.css'
 import UsuarioInfo from '../condicional/UsuarioInfo';
+import DiretaPai from '../comunicacao/DiretaPai';
+import IndiretaPai from '../comunicacao/IndiretaPai';
+import Input from '../formulario/Input';
+import Contador from '../contador/Contador';
 
 export default function App() {
 	return (
 		<div className="App">
 			<h1>Fundamentos React</h1>
 			<div className="Cards">
+				<Card titulo="#12 - Contador" color={'#' + Math.floor(Math.random() * 16777215).toString(16)}>
+					<Contador numeroInicial={10}/>
+				</Card>
+				<Card titulo="#11 - Componente Controlado (input)" color={'#' + Math.floor(Math.random() * 16777215).toString(16)}>
+					<Input />
+				</Card>
+				<Card
+					titulo="#10 - Comunicação Indireta"
+					color={'#' + Math.floor(Math.random() * 16777215).toString(16)}
+				>
+					<IndiretaPai />
+				</Card>
+				<Card titulo="#09 - Comunicação Direta" color={'#' + Math.floor(Math.random() * 16777215).toString(16)}>
+					<DiretaPai />
+				</Card>
 				<Card
 					titulo="#08 - Renderização Condicional"
 					color={'#' + Math.floor(Math.random() * 16777215).toString(16)}

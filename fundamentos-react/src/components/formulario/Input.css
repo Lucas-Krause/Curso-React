@@ -1,0 +1,6 @@
+.Input input {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 22%;
+}
