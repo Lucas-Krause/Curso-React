@@ -14,16 +14,23 @@ import DiretaPai from '../comunicacao/DiretaPai';
 import IndiretaPai from '../comunicacao/IndiretaPai';
 import Input from '../formulario/Input';
 import Contador from '../contador/Contador';
+import Mega from '../mega/Mega.jsx';
 
 export default function App() {
 	return (
 		<div className="App">
 			<h1>Fundamentos React</h1>
 			<div className="Cards">
-				<Card titulo="#12 - Contador" color={'#' + Math.floor(Math.random() * 16777215).toString(16)}>
-					<Contador numeroInicial={10}/>
+				<Card titulo="#13 - Desafio Mega" color={'#' + Math.floor(Math.random() * 16777215).toString(16)}>
+					<Mega quantidadeNumeros={11}></Mega>
 				</Card>
-				<Card titulo="#11 - Componente Controlado (input)" color={'#' + Math.floor(Math.random() * 16777215).toString(16)}>
+				<Card titulo="#12 - Contador" color={'#' + Math.floor(Math.random() * 16777215).toString(16)}>
+					<Contador numeroInicial={10} />
+				</Card>
+				<Card
+					titulo="#11 - Componente Controlado (input)"
+					color={'#' + Math.floor(Math.random() * 16777215).toString(16)}
+				>
 					<Input />
 				</Card>
 				<Card
